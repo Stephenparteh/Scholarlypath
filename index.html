@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4th National Study Abroad Summit</title>
+    <meta name="description"
+        content="4th National Study Abroad Summit, Liberia: Unlocking international opportunities for Liberian students. Join us on October 15-16, 2024, at the Ministerial Complex.">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             padding-top: 70px;
-            /* For fixed header */
         }
 
         .navbar {
             background-color: #009688;
-            /* Green */
         }
 
         .navbar.fixed-top {
@@ -27,9 +28,9 @@
         }
 
         .hero-section {
-            background: url('images/group02.jpeg') no-repeat center center/cover;
+            background: url('images/group01.jpeg') no-repeat center center/cover;
             color: white;
-            padding: 120px 0;
+            padding: 150px 0;
             text-align: center;
         }
 
@@ -64,7 +65,7 @@
         }
 
         .footer {
-            background-color: #333;
+            background-color: #444;
             color: white;
             padding: 40px 0;
         }
@@ -91,6 +92,32 @@
         .social-icons i:hover {
             color: #00796b;
         }
+
+        .objectives-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .objectives-list ul li i {
+            color: #009688;
+            margin-right: 10px;
+        }
+
+        .testimonial-section {
+            background-color: #f8f9fa;
+        }
+
+        .testimonial-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card h4 {
+            font-size: 1.25rem;
+            color: #009688;
+        }
     </style>
 </head>
 
@@ -100,6 +127,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
+                <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
+                    alt="ScholarlyPath Logo">
                 <a class="navbar-brand" href="#">ScholarlyPath</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,16 +140,13 @@
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#introduction">Introduction</a>
+                            <a class="nav-link" href="#introduction">About the Summit</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#welcome-message">Welcome</a>
+                            <a class="nav-link" href="#speakers">Speakers & Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#key-objectives">Objectives</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#countdown">Countdown</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -135,129 +161,161 @@
             <p data-aos="fade-up">Theme: "Liberia to the World: Unlocking International Opportunities for Liberian
                 Students”</p>
             <p data-aos="fade-up">Date: October 15-16, 2024 | Venue: Ministerial Complex</p>
-            <a href="#register" class="btn-main" data-aos="fade-up">Learn More</a>
-        </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section id="introduction" class="section-padding" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-green">About the Summit</h2>
-            <p>The National Study Abroad Summit is Liberia's leading event for connecting students with global
-                educational opportunities. It provides insights into higher education abroad, expert guidance on
-                application processes, and access to scholarship programs.</p>
-            <h3>Why Attend?</h3>
-            <ul>
-                <li>Discover opportunities for studying in prestigious international institutions.</li>
-                <li>Learn the ins and outs of scholarship applications and funding options.</li>
-                <li>Network with education professionals, students, and international university representatives.</li>
-            </ul>
+            <a href="#register" class="btn-main" data-aos="fade-up">Register Now</a>
         </div>
     </section>
 
     <!-- Welcome Message Section -->
-    <section id="welcome-message" class="bg-dark-custom text-white section-padding" data-aos="fade-up">
+    <section id="introduction" class="section-padding" data-aos="fade-up">
         <div class="container">
-            <h2>Welcome from the CEO</h2>
-            <p>As someone who has personally experienced the transformative power of international education, I want to
-                ensure that every Liberian student has the chance to access similar opportunities. This summit
-                represents a crucial step toward making global education accessible to all Liberians, regardless of
-                their background.</p>
-            <h3>Our Vision</h3>
-            <p>The summit is designed to empower you to achieve your academic dreams by providing the tools, resources,
-                and networks necessary for success.</p>
+            <h2 class="text-green text-center">Welcome to the Summit</h2>
+            <p class="text-center">The National Study Abroad Summit is an initiative aimed at creating international
+                educational opportunities for Liberian students. This summit focuses on empowering students with the
+                knowledge, tools, and networks necessary to pursue academic success abroad.</p>
+            <p class="text-center">Join us for a two-day event featuring expert speakers, interactive workshops, and
+                valuable networking opportunities. Our goal is to help students navigate the study abroad process with
+                confidence and gain the insights needed to succeed in their international educational journey.</p>
+        </div>
+    </section>
+
+    <!-- CEO’s Personal Story Section -->
+    <section id="ceo-story" class="section-padding bg-light" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-green">CEO’s Personal Story</h2>
+                    <p>As a proud Liberian who studied abroad, it was one of the most transformative experiences of my
+                        life. The exposure to new ideas and academic excellence abroad shaped my career and allowed me
+                        to bring skills and knowledge back to Liberia. The challenges and triumphs I encountered during
+                        my studies have inspired me to create this summit.</p>
+                    <h3>Vision for the Summit</h3>
+                    <p>This summit is designed to create similar pathways for Liberian students, equipping them with the
+                        tools they need to succeed internationally and contribute to Liberia’s development. We aim to
+                        provide practical advice, personal mentorship, and access to a network of professionals who can
+                        guide and support students in their study abroad journey.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/group04.jpeg" alt="CEO sharing a personal study abroad experience"
+                        class="img-fluid">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Key Objectives Section -->
     <section id="key-objectives" class="section-padding" data-aos="fade-up">
         <div class="container">
-            <h2 class="text-green">Key Objectives</h2>
-            <div class="row">
-                <div class="col-md-4" data-aos="fade-up">
-                    <h3>Global Education</h3>
-                    <p>Explore opportunities for studying in world-class universities and institutions.</p>
+            <h2 class="text-green text-center">Key Objectives</h2>
+            <div class="row objectives-list">
+                <div class="col-md-6">
+                    <h4 class="text-green"><i class="fas fa-graduation-cap"></i> Acquire Comprehensive Knowledge</h4>
+                    <p>Learn everything you need to know about studying abroad, including application processes, visa
+                        requirements, and adapting to a new educational environment. Develop the skills to navigate the
+                        process independently with confidence.</p>
                 </div>
-                <div class="col-md-4" data-aos="fade-up">
-                    <h3>Scholarship Guidance</h3>
-                    <p>Receive expert advice on applying for scholarships and financial aid.</p>
+                <div class="col-md-6">
+                    <h4 class="text-green"><i class="fas fa-lightbulb"></i> Personalized Mentorship</h4>
+                    <p>Benefit from tailored guidance and support from mentors who align with your educational goals.
+                        Our experienced mentors will offer one-on-one sessions to address your specific needs and
+                        provide advice on how to achieve your academic and career objectives.</p>
                 </div>
-                <div class="col-md-4" data-aos="fade-up">
-                    <h3>Career Networking</h3>
-                    <p>Build connections with professionals and students who share your academic interests.</p>
+                <div class="col-md-6">
+                    <h4 class="text-green"><i class="fas fa-users"></i> Empowerment for the Next Stage</h4>
+                    <p>Gain the tools and information necessary to advance in your study abroad journey. Learn how to
+                        effectively prepare for life abroad, manage your studies, and integrate into a new academic and
+                        cultural environment.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-green"><i class="fas fa-money-bill-wave"></i> In-Depth Scholarship Insights</h4>
+                    <p>Understand available scholarships and how to craft a competitive application to boost your
+                        chances of success. Our sessions will cover various scholarship opportunities, application tips,
+                        and how to present yourself as a strong candidate.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Countdown Timer Section -->
-    <section id="countdown" class="bg-dark-custom text-white section-padding text-center" data-aos="fade-up">
+    <!-- Countdown Section -->
+    <section id="countdown" class="section-padding bg-dark-custom text-white">
+        <div class="container text-center">
+            <h2 class="text-green">Countdown to the Summit</h2>
+            <div id="timer" class="countdown"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding testimonial-section">
         <div class="container">
-            <h2>Countdown to Summit</h2>
-            <div id="timer">00:00:00:00</div>
+            <h2 class="text-green text-center">What Our Attendees Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h4>John Doe</h4>
+                        <p>"The summit was incredibly informative and inspiring. The sessions provided practical advice
+                            and valuable connections that will benefit me in my study abroad journey."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h4>Jane Smith</h4>
+                        <p>"The personal stories shared by the speakers were motivational and gave me a clearer
+                            understanding of the opportunities available. Highly recommended for anyone considering
+                            studying abroad."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <h4>Emily Johnson</h4>
+                        <p>"I gained so much from the mentorship and advice offered at the summit. It has given me the
+                            confidence to pursue my academic goals internationally."</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <!-- Quick Links -->
-                <div class="col-md-4">
-                    <h4>Quick Links</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#introduction">About</a></li>
-                        <li><a href="#welcome-message">Welcome</a></li>
-                        <li><a href="#key-objectives">Objectives</a></li>
-                        <li><a href="#countdown">Countdown</a></li>
-                    </ul>
-                </div>
-
-                <!-- About ScholarlyPath -->
-                <div class="col-md-4">
-                    <h4>About ScholarlyPath</h4>
-                    <p>ScholarlyPath is dedicated to providing Liberian students with opportunities to pursue higher
-                        education abroad, offering guidance on scholarships, applications, and career paths.</p>
-                </div>
-
-                <!-- Follow Us -->
-                <div class="col-md-4">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="mt-4">
-            <p class="text-center">&copy; 2024 ScholarlyPath. All rights reserved.</p>
+        <div class="container text-center">
+            <p>&copy; 2024 ScholarlyPath. All Rights Reserved.</p>
+            <p>Follow us on:
+                <span class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </span>
+            </p>
+            <p><a href="#home">Back to Top</a></p>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init(); // Initialize AOS animations
-        // Countdown Timer (Dummy Functionality)
-        const countdown = new Date("Sep 27, 2024 00:00:00").getTime();
-        const timer = setInterval(function () {
+        AOS.init();
+    </script>
+    <script>
+        // Countdown Timer
+        const countdownDate = new Date("Sep 26, 2024 00:00:00").getTime();
+        const timer = document.getElementById("timer");
+
+        setInterval(() => {
             const now = new Date().getTime();
-            const distance = countdown - now;
+            const distance = countdownDate - now;
+
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
             if (distance < 0) {
-                clearInterval(timer);
-                document.getElementById("timer").innerHTML = "EXPIRED";
+                clearInterval(x);
+                timer.innerHTML = "The Summit has Started!";
             }
         }, 1000);
     </script>
