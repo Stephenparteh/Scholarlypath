@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Event</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- AOS Library for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('images/group04.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        /* Key Section Styling */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-heading {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .section-content {
+            font-size: 1.2rem;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div>
+            <h1 data-aos="fade-down" data-aos-delay="100">Welcome to the Summit Event</h1>
+            <p data-aos="fade-up" data-aos-delay="300">Bringing global opportunities closer to Liberian students.</p>
+        </div>
+    </section>
+
+    <!-- About the Summit -->
+    <section id="overview" class="section bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-heading text-center">About the Summit</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3>Event Overview</h3>
+                    <p class="section-content"><strong>Theme:</strong> Elaborate on the summit’s theme and its relevance
+                        to Liberian students.</p>
+                    <p class="section-content"><strong>Date & Venue:</strong> Specifics about the date and the location
+                        (Ministerial Complex), including any logistical details or directions.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="images/group03.jpeg" alt="Summit" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purpose -->
+    <section id="purpose" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-heading text-center">Purpose</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3>Goals</h3>
+                    <p class="section-content">The summit’s goals include increasing access to international education
+                        and fostering global opportunities for Liberian students.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>Target Audience</h3>
+                    <p class="section-content">The summit is targeted at students, professionals, and educators looking
+                        for international education opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="section bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-heading text-center">Schedule</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3>Day 1</h3>
+                    <ul class="section-content">
+                        <li><strong>Opening Ceremony:</strong> Keynote speeches and welcome addresses from prominent
+                            leaders.</li>
+                        <li><strong>Workshops & Sessions:</strong> Interactive sessions on various education topics.
+                        </li>
+                        <li><strong>Networking Event:</strong> Evening event for participants to connect with
+                            professionals.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>Day 2</h3>
+                    <ul class="section-content">
+                        <li><strong>Panel Discussions:</strong> Discussions with experts on study abroad opportunities.
+                        </li>
+                        <li><strong>Interactive Sessions:</strong> Q&A and interactive workshops with educators.</li>
+                        <li><strong>Closing Ceremony:</strong> Final remarks, awards, and recognitions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Attend -->
+    <section id="why-attend" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-heading text-center">Why Attend</h2>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <h3>Expert Guidance</h3>
+                    <p class="section-content">Access expert guidance that will assist you with applications to
+                        international schools and programs.</p>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h3>Skills Training</h3>
+                    <p class="section-content">Attend workshops to improve skills like resume writing, interview
+                        techniques, and more.</p>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <h3>Networking Opportunities</h3>
+                    <p class="section-content">Build connections with professionals, peers, and educators to enhance
+                        your career and academic prospects.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <h3>Testimonials</h3>
+                    <p class="section-content">"Attending the summit last year helped me connect with international
+                        mentors and land a scholarship!" - Past Attendee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Summit Event. All rights reserved.</p>
+            <p>Follow us:
+                <a href="#" class="text-white"><i class="fab fa-facebook fa-lg mx-2"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter fa-lg mx-2"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg mx-2"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Library JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: true // Only animate once
+        });
+    </script>
+
+</body>
+
+</html>
