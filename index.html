@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th National Study Abroad Summit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 70px;
+            /* For fixed header */
+        }
+
+        .navbar {
+            background-color: #009688;
+            /* Green */
+        }
+
+        .navbar.fixed-top {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1030;
+        }
+
+        .hero-section {
+            background: url('banner-image.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .btn-main {
+            background-color: #009688;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1.25rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-main:hover {
+            background-color: #00796b;
+        }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        .bg-dark-custom {
+            background-color: #333;
+        }
+
+        .text-green {
+            color: #009688;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: #009688;
+        }
+
+        .footer a:hover {
+            color: #00796b;
+        }
+
+        #timer {
+            font-size: 2.5rem;
+        }
+
+        .social-icons i {
+            font-size: 1.5rem;
+            color: white;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #00796b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Fixed) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">ScholarlyPath</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#introduction">Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#welcome-message">Welcome</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#key-objectives">Objectives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#countdown">Countdown</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title" data-aos="fade-down">4th National Study Abroad Summit</h1>
+            <p data-aos="fade-up">Theme: "Liberia to the World: Unlocking International Opportunities for Liberian
+                Students”</p>
+            <p data-aos="fade-up">Date: October 15-16, 2024 | Venue: Ministerial Complex</p>
+            <a href="#register" class="btn-main" data-aos="fade-up">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-green">About the Summit</h2>
+            <p>The National Study Abroad Summit is Liberia's leading event for connecting students with global
+                educational opportunities. It provides insights into higher education abroad, expert guidance on
+                application processes, and access to scholarship programs.</p>
+            <h3>Why Attend?</h3>
+            <ul>
+                <li>Discover opportunities for studying in prestigious international institutions.</li>
+                <li>Learn the ins and outs of scholarship applications and funding options.</li>
+                <li>Network with education professionals, students, and international university representatives.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Welcome Message Section -->
+    <section id="welcome-message" class="bg-dark-custom text-white section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2>Welcome from the CEO</h2>
+            <p>As someone who has personally experienced the transformative power of international education, I want to
+                ensure that every Liberian student has the chance to access similar opportunities. This summit
+                represents a crucial step toward making global education accessible to all Liberians, regardless of
+                their background.</p>
+            <h3>Our Vision</h3>
+            <p>The summit is designed to empower you to achieve your academic dreams by providing the tools, resources,
+                and networks necessary for success.</p>
+        </div>
+    </section>
+
+    <!-- Key Objectives Section -->
+    <section id="key-objectives" class="section-padding" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-green">Key Objectives</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <h3>Global Education</h3>
+                    <p>Explore opportunities for studying in world-class universities and institutions.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <h3>Scholarship Guidance</h3>
+                    <p>Receive expert advice on applying for scholarships and financial aid.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <h3>Career Networking</h3>
+                    <p>Build connections with professionals and students who share your academic interests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer Section -->
+    <section id="countdown" class="bg-dark-custom text-white section-padding text-center" data-aos="fade-up">
+        <div class="container">
+            <h2>Countdown to Summit</h2>
+            <div id="timer">00:00:00:00</div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#introduction">About</a></li>
+                        <li><a href="#welcome-message">Welcome</a></li>
+                        <li><a href="#key-objectives">Objectives</a></li>
+                        <li><a href="#countdown">Countdown</a></li>
+                    </ul>
+                </div>
+
+                <!-- About ScholarlyPath -->
+                <div class="col-md-4">
+                    <h4>About ScholarlyPath</h4>
+                    <p>ScholarlyPath is dedicated to providing Liberian students with opportunities to pursue higher
+                        education abroad, offering guidance on scholarships, applications, and career paths.</p>
+                </div>
+
+                <!-- Follow Us -->
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4">
+            <p class="text-center">&copy; 2024 ScholarlyPath. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+        // Countdown Timer (Dummy Functionality)
+        const countdown = new Date("Sep 27, 2024 00:00:00").getTime();
+        const timer = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countdown - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
