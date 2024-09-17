@@ -16,13 +16,65 @@
 
     <!-- Custom Styles -->
     <style>
+        .why-attend {
+            padding: 60px 0;
+        }
+
+        .hero-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-header p {
+            font-size: 1.2rem;
+        }
+
+        .benefit-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .carousel-item blockquote {
+            border-left: 5px solid #ffffff;
+            padding-left: 15px;
+            font-size: 1.1rem;
+        }
+
+        .cta {
+            margin-top: 40px;
+        }
+
+        .cta h3 {
+            font-size: 2rem;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+        }
+
+        .btn-light {
+            background-color: #ffffff;
+            color: #007bff;
+        }
+
         body {
             font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
 
         /* Navigation Bar */
         .navbar {
             background-color: #009688;
+            padding: 0.5rem 1rem;
         }
 
         .navbar-brand,
@@ -35,10 +87,14 @@
             color: #00bfae !important;
         }
 
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 0.5)" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+        }
+
         /* Hero Section */
         .hero-section {
             background: url('images/group04.jpeg') no-repeat center center/cover;
-            height: 100vh;
+            height: 80vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -46,10 +102,12 @@
             text-align: center;
             position: relative;
             width: 100%;
+            overflow: hidden;
         }
 
         .hero-section h1 {
             font-size: 4rem;
+            margin: 0;
             animation: fadeInDown 1s ease-in-out;
         }
 
@@ -75,7 +133,7 @@
             z-index: 2;
         }
 
-        /* Key Section Styling */
+        /* Section Styling */
         .section {
             padding: 60px 0;
         }
@@ -89,23 +147,79 @@
 
         .section-content {
             font-size: 1.2rem;
+            line-height: 1.6;
+            color: #495057;
         }
 
+        /* Testimonial Card */
         .testimonial-card {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
 
         .testimonial-card h4 {
             font-size: 1.5rem;
             color: #343a40;
+            margin-bottom: 0.5rem;
         }
 
         .testimonial-card p {
             font-size: 1rem;
-            color: #495057;
+        }
+
+        .testimonial-card a {
+            color: #009688;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .testimonial-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Zigzag Layout */
+        .zigzag {
+            padding: 60px 0;
+        }
+
+        .zigzag .row {
+            align-items: center;
+        }
+
+        .zigzag img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .zigzag img:hover {
+            transform: scale(1.05);
+        }
+
+        .zigzag:nth-child(even) .content {
+            text-align: right;
+            padding-left: 30px;
+        }
+
+        .zigzag:nth-child(odd) .content {
+            text-align: left;
+            padding-right: 30px;
+        }
+
+        .zigzag:nth-child(even) .image {
+            order: 2;
+        }
+
+        .zigzag:nth-child(odd) .image {
+            order: 1;
         }
 
         /* Footer Styling */
@@ -124,6 +238,11 @@
             color: #ffffff;
             font-size: 1.5rem;
             margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #00bfae;
         }
 
         /* Animations */
@@ -159,8 +278,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
-                    alt="ScholarlyPath Logo">
-                <a class="navbar-brand" href="#">ScholarlyPath</a>
+                    alt="Summit Event Logo">
+                <a class="navbar-brand" href="#">Summit Event</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -171,7 +290,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About the Summit</a>
+                            <a class="nav-link" href="#overview">About the Summit</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#speakers">Speakers & Team</a>
@@ -198,15 +317,21 @@
         <div class="container">
             <h2 class="section-heading text-center">About the Summit</h2>
             <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h3>Event Overview</h3>
-                    <p class="section-content"><strong>Theme:</strong> Elaborate on the summit’s theme and its relevance
-                        to Liberian students.</p>
-                    <p class="section-content"><strong>Date & Venue:</strong> Specifics about the date and the location
-                        (Ministerial Complex), including any logistical details or directions.</p>
+                <div class="col-lg-6" data-aos="fade-right" style="align-self: center;">
+                    <!-- <h3>Event Overview</h3> -->
+                    <h5>Our summit will include 850 participants, representing the rich diversity of Liberia. Attendees
+                        will
+                        include students from various ethnic backgrounds, political
+                        affiliations, and educational experiences, all united by the common goal of pursuing
+                        academic excellence abroad. </h5>
+                    <h5>
+                        This diverse group will comprise undergraduate, master's, and Ph.D. candidates interested in
+                        studying overseas. In addition, we welcome professionals seeking opportunities for career
+                        advancementthrough international education.This inclusive approach ensures a wide range
+                        ofperspectives and fosters a collaborative environmentfor learningand growth</h5>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <img src="images/group03.jpeg" alt="Summit" class="img-fluid rounded">
+                    <img src="images/group02.jpeg" alt="Summit" class="img-fluid rounded shadow-sm">
                 </div>
             </div>
         </div>
@@ -218,108 +343,225 @@
             <h2 class="section-heading text-center">Purpose</h2>
             <div class="row">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <h3>Goals</h3>
-                    <p class="section-content">The summit’s goals include increasing access to international education
-                        and fostering global opportunities for Liberian students.</p>
+                    <img src="images/wan.jpeg" alt="Purpose" class="img-fluid rounded shadow-sm">
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <h3>Target Audience</h3>
-                    <p class="section-content">The summit is targeted at students, professionals, and educators looking
-                        for international education opportunities.</p>
+                <div class="col-lg-6" data-aos="fade-left" style="align-self: center;">
+                    <h5>
+                        Scholarly Path, in collaboration with the Center for African Policy, proudly presents the 4th
+                        Edition of the National Study Abroad Summit. This dynamic two-day event is
+                        designed to empower Liberian students who aspire to further their education through
+                        graduate and undergraduate study abroad programs. </h5>
+
+                    <h5>Our mission is to provide participants
+                        with the tools, resources, and guidance needed to navigate the complex landscape of
+                        international education, unlocking pathways to global opportunities and academic
+                        excellence</h5>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Schedule -->
-    <section id="schedule" class="section bg-light" data-aos="fade-up">
+    <!-- Speakers & Team -->
+    <section id="speakers" class="section bg-light" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-heading text-center">Schedule</h2>
+            <h2 class="section-heading text-center mb-4">Speakers & Team</h2>
             <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h3>Day 1</h3>
-                    <ul class="section-content">
-                        <li><strong>Opening Ceremony:</strong> Keynote speeches and welcome addresses from prominent
-                            leaders.</li>
-                        <li><strong>Workshops & Sessions:</strong> Interactive sessions on various education topics.
-                        </li>
-                        <li><strong>Networking Event:</strong> Evening event for participants to connect with
-                            professionals.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <h3>Day 2</h3>
-                    <ul class="section-content">
-                        <li><strong>Panel Discussions:</strong> Discussions with experts on study abroad opportunities.
-                        </li>
-                        <li><strong>Interactive Sessions:</strong> Q&A and interactive workshops with educators.</li>
-                        <li><strong>Closing Ceremony:</strong> Final remarks, awards, and recognitions.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Attend -->
-    <section id="why-attend" class="section" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-heading text-center">Why Attend</h2>
-            <div class="row">
-                <div class="col-lg-4" data-aos="fade-right">
-                    <h3>Expert Guidance</h3>
-                    <p class="section-content">Access expert guidance that will assist you with applications to
-                        international schools and programs.</p>
-                </div>
-                <div class="col-lg-4" data-aos="fade-up">
-                    <h3>Skills Training</h3>
-                    <p class="section-content">Attend workshops to improve skills like resume writing, interview
-                        techniques, and more.</p>
-                </div>
-                <div class="col-lg-4" data-aos="fade-left">
-                    <h3>Networking Opportunities</h3>
-                    <p class="section-content">Build connections with professionals, peers, and educators to enhance
-                        your career and academic prospects.</p>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-lg-12 text-center" data-aos="fade-up">
-                    <div class="testimonial-card mx-auto">
-                        <h4>Testimonials</h4>
-                        <p>"Attending the summit last year helped me connect with international mentors and land a
-                            scholarship!" - Past Attendee</p>
+                <!-- Speaker 1 -->
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <img src="images/wantoe01.jpeg" alt="Wantoe T. Wantoe" class="img-fluid rounded shadow"
+                            style="height: 300px; width: 100%; object-fit: cover;">
+                        <h4>Wantoe T. Wantoe</h4>
+                        <h6>Co-Founder and CEO, ScholarlyPath</h6>
+                        <p>“Insightful talk on global education opportunities and career planning.”</p>
                     </div>
                 </div>
+                <!-- Speaker 2 -->
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <img src="images/aaron01.jpeg" alt="Jane Doe" class="img-fluid rounded shadow"
+                            style="height: 300px; width: 100%; object-fit: cover;">
+                        <h4>Aaron Ireland</h4>
+                        <h6>Program coordinater</h6>
+                        <p>“Strategies for effective college applications and interviews.”</p>
+                    </div>
+                </div>
+                <!-- Speaker 3 -->
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <img src="images/suma02.jpeg" alt="John Smith" class="img-fluid rounded shadow"
+                            style="height: 300px; width: 100%; object-fit: cover;">
+                        <h4>Suma Massaley</h4>
+                        <h6>Director of Admission and Education</h6>
+                        <p>“Navigating international education systems and scholarship opportunities.”</p>
+                    </div>
+                </div>
+                <!-- View Full Team Button -->
+                <div style="justify-content: center; display: flex; width: 100%; margin-top: 15px;">
+                    <a href="#register" class="btn-main" data-aos="fade-up"
+                        style="background-color: #009688; color: white; padding: 12px 24px; font-size: 1.25rem; border-radius: 5px;">View
+                        Full Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Why Attend Section -->
+    <section id="why-attend" class="why-attend text-dark">
+        <div class="container">
+            <!-- Hero Header -->
+            <div class="hero-header text-center mb-4">
+                <h2>Why Attend Our Event?</h2>
+                <p>Join us to explore a world of possibilities and take advantage of the following benefits.</p>
+            </div>
+
+            <!-- Benefits Grid -->
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 bg-light rounded shadow-sm">
+                        <i class="fas fa-users-cog fa-3x mb-3"></i>
+                        <h4>Expert Guidance</h4>
+                        <p>Gain access to expert advice on navigating college applications, scholarship opportunities,
+                            and selecting suitable programs. Our team of experienced professionals will provide
+                            comprehensive support to help you make informed decisions about your academic journey.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 bg-light rounded shadow-sm">
+                        <i class="fas fa-tools fa-3x mb-3"></i>
+                        <h4>Skills Training</h4>
+                        <p>Participate in interactive workshops designed to enhance your skills and prepare you for
+                            successful college admissions. Topics covered will include essay writing, interview
+                            preparation, standardized test strategies, and more.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 bg-light rounded shadow-sm">
+                        <i class="fas fa-user-tie fa-3x mb-3"></i>
+                        <h4>Personalized Mentorship</h4>
+                        <p>Benefit from one-on-one mentoring sessions with seasoned educators and study abroad alumni.
+                            These personalized interactions will offer tailored advice, help you identify your
+                            strengths, and guide you toward achieving your academic and career goals.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 bg-light rounded shadow-sm">
+                        <i class="fas fa-search fa-3x mb-3"></i>
+                        <h4>Extensive Research Assistance</h4>
+                        <p>Access a wealth of information, including curated lists of colleges, universities, and
+                            scholarships across the US, Canada, Asia, the UK, and Europe. Our resources will empower you
+                            to explore a wide range of educational opportunities and choose the best fit for your
+                            aspirations.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 bg-light rounded shadow-sm">
+                        <i class="fas fa-quote-left fa-3x mb-3"></i>
+                        <h4>Inspiring Alumni Stories</h4>
+                        <p>Hear firsthand accounts from study abroad alumni who have excelled on the global stage. Learn
+                            from their experiences, gain insights into overcoming challenges, and be inspired by their
+                            journeys of personal and academic growth.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 bg-light rounded shadow-sm">
+                        <i class="fas fa-users fa-3x mb-3"></i>
+                        <h4>Networking Opportunities</h4>
+                        <p>Connect with educational professionals, policymakers, and fellow students who share your
+                            passion for learning and exploration. Build valuable relationships that can support your
+                            academic endeavors and future career prospects.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 bg-light rounded shadow-sm">
+                        <i class="fas fa-briefcase fa-3x mb-3"></i>
+                        <h4>Career Enhancement</h4>
+                        <p>Discover how international education can significantly enhance your career opportunities.
+                            Learn about global job markets, develop cross-cultural competencies, and understand how to
+                            leverage your study abroad experience to stand out in a competitive workforce.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 bg-light rounded shadow-sm">
+                        <i class="fas fa-globe fa-3x mb-3"></i>
+
+                        <h4>Cultural Immersion</h4>
+                        <p>Engage in cultural exchanges that promote global understanding and unity. Experience diverse
+                            perspectives, broaden your worldview, and develop a deeper appreciation for different
+                            cultures and traditions.</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Testimonials Carousel -->
+            <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"An incredible experience with valuable insights. Highly recommended!"</p>
+                            <footer class="blockquote-footer">Jane Doe <cite title="Source">Previous Attendee</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"The event provided me with essential tools and connections for my career."
+                            </p>
+                            <footer class="blockquote-footer">John Smith <cite title="Source">Industry Expert</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonials-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonials-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!-- Call-to-Action -->
+            <div class="text-center mt-4">
+                <h3>Ready to Join Us?</h3>
+                <p>Don’t miss out on the opportunity to enhance your experience. Register now!</p>
+                <a href="#register" class="btn btn-light">Register Now</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div class="container">
             <p>&copy; 2024 Summit Event. All rights reserved.</p>
-            <p>Follow us:</p>
-            <div class="social-icons">
-                <a href="#" class="text-white"><i class="fab fa-facebook fa-lg mx-2"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-twitter fa-lg mx-2"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg mx-2"></i></a>
-            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- AOS Library JS -->
+    <!-- AOS Library for Animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Initialize AOS -->
     <script>
-        AOS.init({
-            duration: 1000, // Animation duration
-            once: true // Only animate once
-        });
+        AOS.init();
     </script>
-
 </body>
 
 </html>
