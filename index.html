@@ -7,7 +7,7 @@
     <title>4th National Study Abroad Summit</title>
     <meta name="description"
         content="4th National Study Abroad Summit, Liberia: Unlocking international opportunities for Liberian students. Join us on October 15-16, 2024, at the Ministerial Complex.">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
@@ -62,6 +62,7 @@
             font-size: 1.25rem;
             border-radius: 5px;
             transition: background-color 0.3s;
+            text-decoration: none;
         }
 
         .btn-main:hover {
@@ -153,12 +154,12 @@
                 <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
                     alt="ScholarlyPath Logo">
                 <a class="navbar-brand" href="#">ScholarlyPath</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
@@ -177,6 +178,7 @@
         </nav>
     </header>
 
+
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="container" style="z-index: 2;">
@@ -185,6 +187,87 @@
                 Students”</p>
             <p data-aos="fade-up">Date: September 26 - 27, 2024 | Venue: Ministerial Complex</p>
             <a href="#register" class="btn-main" data-aos="fade-up">Register Now</a>
+        </div>
+    </section>
+    <section id="welcome-message" class="section-padding">
+        <div class="container text-center">
+            <button type="button" class="btn btn-main" style="padding: 6px 12px;" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                View a Special Welcome Message From the CEO
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Welcome Message From The CEO</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="letter-content" style="text-align: left;">
+                                <p>As a Liberian from an underprivileged background,
+                                    I understand the transformative power of education firsthand. My father's salary
+                                    couldn't afford private university education in Liberia, yet pursuing scholarships
+                                    and studying abroad shaped who I am today. It gave me the opportunity to study in
+                                    the United States and earn my first Master’s in Public Policy at the University of
+                                    Oxford. Now, I’m pursuing a second master's in Contemporary Education at Oxford on a
+                                    full scholarship.</p>
+
+                                <p>ScholarlyPath was founded by successful study abroad alumni with stories like mine,
+                                    aiming to inspire and support others in realizing their dreams. Our flagship Study
+                                    Abroad Symposium empowers Liberians by teaching them how to apply for global
+                                    admissions and scholarship programs. Through storytelling and skill-building
+                                    presentations, we expand knowledge on various application opportunities.</p>
+
+                                <p>This Fall 2025, thousands of Liberians will pursue admission and scholarships. Our
+                                    summit will empower and inspire them to be competitive and successful, serving as a
+                                    platform for finding diverse scholarships and admission opportunities. We’ve seen
+                                    this thrive in Ghana, Kenya, Nigeria, and across Africa. For the past three years,
+                                    we’ve inspired many with this platform.</p>
+
+                                <p>We believe you can join this revolution. Partner with us to help promote global
+                                    opportunities for Liberians. Our mission is to support and inspire them through our
+                                    journey and the experiences of others. This will be our primary focus and energy
+                                    until the month ends.</p>
+
+                                <p>Our summit is designed to empower you to apply for competitive full scholarships
+                                    independently. Here’s what we aim to achieve:</p>
+                                <ul>
+                                    <li> <strong>Acquire Comprehensive Knowledge</strong>: Learn everything you need to
+                                        know about
+                                        studying abroad and develop the skills to navigate the application process
+                                        independently.</li>
+                                    <li><strong>Personalized Mentorship</strong>: Benefit from tailored guidance and support from mentors
+                                        who align with your educational goals.</li>
+                                    <li><strong>Empowerment for the Next Stage</strong>: Gain the tools and information necessary to
+                                        advance in your study abroad journey.</li>
+                                    <li><strong>In-Depth Scholarship Insights</strong>: Understand available scholarships and how to
+                                        craft a competitive application to boost your chances of success.</li>
+                                </ul>
+
+                                <p>The summit takes place just before the competitive application season, making it the
+                                    perfect time to start your journey. We are excited about this edition, especially
+                                    since we’ve partnered with a renowned institution to enhance the event. Secure your
+                                    seat as soon as possible and don’t miss this opportunity!</p>
+
+                                <p>If you want to partner or sponsor, please don’t hesitate to reach out.</p>
+
+                                <p>Warm regards,</p>
+                                <p>Wantoe T. Wantoe<br>
+                                    Co-Founder and CEO<br>
+                                    ScholarlyPath</p>
+                            </div>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -196,10 +279,12 @@
                 educational opportunities for Liberian students. This summit focuses on empowering students with the
                 knowledge, tools, and networks necessary to pursue academic success abroad.</p>
             <p class="text-center">Join us for a two-day event featuring expert speakers, interactive workshops, and
-                valuable networking opportunities. Our goal is to help students navigate the study abroad process with
+                valuable networking opportunities. Our goal is to help students navigate the study abroad process
+                with
                 confidence and gain the insights needed to succeed in their international educational journey.</p>
         </div>
     </section>
+
 
     <!-- CEO’s Personal Story Section -->
     <section id="ceo-story" class="section-padding bg-light" data-aos="fade-up">
@@ -207,14 +292,20 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2 class="text-green">CEO’s Personal Story</h2>
-                    <p>As a proud Liberian who studied abroad, it was one of the most transformative experiences of my
-                        life. The exposure to new ideas and academic excellence abroad shaped my career and allowed me
-                        to bring skills and knowledge back to Liberia. The challenges and triumphs I encountered during
+                    <p>As a proud Liberian who studied abroad, it was one of the most transformative experiences of
+                        my
+                        life. The exposure to new ideas and academic excellence abroad shaped my career and allowed
+                        me
+                        to bring skills and knowledge back to Liberia. The challenges and triumphs I encountered
+                        during
                         my studies have inspired me to create this summit.</p>
                     <h3>Vision for the Summit</h3>
-                    <p>This summit is designed to create similar pathways for Liberian students, equipping them with the
-                        tools they need to succeed internationally and contribute to Liberia’s development. We aim to
-                        provide practical advice, personal mentorship, and access to a network of professionals who can
+                    <p>This summit is designed to create similar pathways for Liberian students, equipping them with
+                        the
+                        tools they need to succeed internationally and contribute to Liberia’s development. We aim
+                        to
+                        provide practical advice, personal mentorship, and access to a network of professionals who
+                        can
                         guide and support students in their study abroad journey.</p>
 
                     <a href="about.html" class="btn-main" data-aos="fade-up">Learn More</a>
@@ -233,27 +324,34 @@
             <h2 class="text-green text-center">Key Objectives</h2>
             <div class="row objectives-list">
                 <div class="col-md-6">
-                    <h4 class="text-green"><i class="fas fa-graduation-cap"></i> Acquire Comprehensive Knowledge</h4>
-                    <p>Learn everything you need to know about studying abroad, including application processes, visa
-                        requirements, and adapting to a new educational environment. Develop the skills to navigate the
+                    <h4 class="text-green"><i class="fas fa-graduation-cap"></i> Acquire Comprehensive Knowledge
+                    </h4>
+                    <p>Learn everything you need to know about studying abroad, including application processes,
+                        visa
+                        requirements, and adapting to a new educational environment. Develop the skills to navigate
+                        the
                         process independently with confidence.</p>
                 </div>
                 <div class="col-md-6">
                     <h4 class="text-green"><i class="fas fa-lightbulb"></i> Personalized Mentorship</h4>
-                    <p>Benefit from tailored guidance and support from mentors who align with your educational goals.
+                    <p>Benefit from tailored guidance and support from mentors who align with your educational
+                        goals.
                         Our experienced mentors will offer one-on-one sessions to address your specific needs and
                         provide advice on how to achieve your academic and career objectives.</p>
                 </div>
                 <div class="col-md-6">
                     <h4 class="text-green"><i class="fas fa-users"></i> Empowerment for the Next Stage</h4>
-                    <p>Gain the tools and information necessary to advance in your study abroad journey. Learn how to
-                        effectively prepare for life abroad, manage your studies, and integrate into a new academic and
+                    <p>Gain the tools and information necessary to advance in your study abroad journey. Learn how
+                        to
+                        effectively prepare for life abroad, manage your studies, and integrate into a new academic
+                        and
                         cultural environment.</p>
                 </div>
                 <div class="col-md-6">
                     <h4 class="text-green"><i class="fas fa-money-bill-wave"></i> In-Depth Scholarship Insights</h4>
                     <p>Understand available scholarships and how to craft a competitive application to boost your
-                        chances of success. Our sessions will cover various scholarship opportunities, application tips,
+                        chances of success. Our sessions will cover various scholarship opportunities, application
+                        tips,
                         and how to present yourself as a strong candidate.</p>
                 </div>
             </div>
@@ -276,7 +374,8 @@
                 <div class="col-md-4">
                     <div class="testimonial-card">
                         <h4>John Doe</h4>
-                        <p>"The summit was incredibly informative and inspiring. The sessions provided practical advice
+                        <p>"The summit was incredibly informative and inspiring. The sessions provided practical
+                            advice
                             and valuable connections that will benefit me in my study abroad journey."</p>
                     </div>
                 </div>
@@ -291,7 +390,8 @@
                 <div class="col-md-4">
                     <div class="testimonial-card">
                         <h4>Emily Johnson</h4>
-                        <p>"I gained so much from the mentorship and advice offered at the summit. It has given me the
+                        <p>"I gained so much from the mentorship and advice offered at the summit. It has given me
+                            the
                             confidence to pursue my academic goals internationally."</p>
                     </div>
                 </div>
@@ -315,10 +415,10 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script>
         AOS.init();
     </script>
@@ -343,6 +443,8 @@
                 timer.innerHTML = "The Summit has Started!";
             }
         }, 1000);
+
+
     </script>
 </body>
 
