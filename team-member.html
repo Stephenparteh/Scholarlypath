@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarlyPath Summit</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional Styling */
+        .card-body h5 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .card-img-top {
+            height: 350px;
+            object-fit: cover;
+        }
+
+        blockquote {
+            font-size: 1.2rem;
+            padding: 1.5rem;
+            border-left: 5px solid #007bff;
+        }
+
+        /* Stat Box */
+        .stat-box {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-box h3 {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        /* Section Headers */
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: #009688;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #00bfae !important;
+        }
+
+        .navbar.fixed-top {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1030;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Fixed) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
+                    alt="ScholarlyPath Logo">
+                <a class="navbar-brand" href="#">ScholarlyPath</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About the Summit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team-member.html">Speakers & Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Keynote Speakers Section -->
+    <section id="keynote-speakers" class="py-5 bg-light mt-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Keynote Speakers</h2>
+                <p>Meet our esteemed speakers who will lead insightful sessions.</p>
+            </div>
+            <div class="row">
+                <!-- Speaker 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <img src="images/wantoe01.jpeg" class="card-img-top" alt="Speaker 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Speaker’s Name</h5>
+                            <p class="card-text">Brief biography of the speaker, their background, and expertise.</p>
+                            <p><strong>Session:</strong> Session or workshop details.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Speaker 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <img src="images/wantoe01.jpeg" class="card-img-top" alt="Speaker 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Speaker’s Name</h5>
+                            <p class="card-text">Brief biography of the speaker, their background, and expertise.</p>
+                            <p><strong>Session:</strong> Session or workshop details.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Speaker 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <img src="images/wantoe01.jpeg" class="card-img-top" alt="Speaker 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Speaker’s Name</h5>
+                            <p class="card-text">Brief biography of the speaker, their background, and expertise.</p>
+                            <p><strong>Session:</strong> Session or workshop details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ScholarlyPath Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>ScholarlyPath Team</h2>
+                <p>Meet the dedicated team behind the ScholarlyPath Summit.</p>
+            </div>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-lg-4">
+                    <div class="testimonial-card shadow-sm mb-4">
+                        <img src="images/suma01.jpeg" class="img-fluid rounded shadow" alt="Team Member 2"
+                            style="height: 300px; width: 100%; object-fit: cover;">
+                        <div class=" card-body">
+                            <h5 class="card-title">Wantoe T. Wantoe</h5>
+                            <p class="card-text"><strong>Role:</strong> Director of Admission and Education Advising</p>
+                            <p><strong>Background:</strong> Wantoe T. Wantoe is the Co-Founder and CEO of
+                                ScholarlyPath,
+                                known for his advocacy for
+                                women and children's rights, combining intellect
+                                and activism to drive change.</p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" style="background-color: #009688; color: white;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read Full Background
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Suma's Background</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ScholarlyPath, known for his advocacy for
+                                            women and children's rights, combining intellect
+                                            and activism to drive change. He holds a Master’s Degree in
+                                            Public Policy from the University of Oxford and has been
+                                            pivotal in shaping national narratives as the 2023 National
+                                            Orator of Liberia's Flag Day. His experience includes
+                                            working with Congressman Jamaal Bowman in the U.S.,
+                                            where he contributed to significantlegislation.
+                                            Wantoe serves as a Board of Trustee member of AFS
+                                            Intercultural Programs, the largest intercultural education
+                                            organization worldwide. He is also pursuing his second
+                                            master's degree at the University of Oxford, focusing on
+                                            ContemporaryEducation.
+                                            His global recognition includes accolades from the Princess
+                                            Diana Award and the Obama Foundation, and he is a
+                                            member of the United Nations Department of Global
+                                            Communi cation Youth Steer ing Committee. At
+                                            ScholarlyPath, his leadership emphasizes education,
+                                            sustainability,and youth empowerment.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-lg-4">
+                    <div class="testimonial-card shadow-sm mb-4">
+                        <img src="images/suma01.jpeg" class="img-fluid rounded shadow" alt="Team Member 2"
+                            style="height: 300px; width: 100%; object-fit: cover;">
+                        <div class=" card-body">
+                            <h5 class="card-title">Suma Massaley</h5>
+                            <p class="card-text"><strong>Role:</strong> Director of Admission and Education Advising</p>
+                            <p><strong>Background:</strong> Wantoe T. Wantoe is the Co-Founder and CEO of
+                                ScholarlyPath,
+                                known for his advocacy for
+                                women and children's rights, combining intellect
+                                and activism to drive change.</p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" style="background-color: #009688; color: white;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read Full Background
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Suma's Background</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Wantoe T. Wantoe is the Co-Founder and CEO of WScholarlyPath,
+                                            known for his advocacy for
+                                            women and children's rights, combining intellect
+                                            and activism to drive change. He holds a Master’s Degree in
+                                            Public Policy from the University of Oxford and has been
+                                            pivotal in shaping national narratives as the 2023 National
+                                            Orator of Liberia's Flag Day. His experience includes
+                                            working with Congressman Jamaal Bowman in the U.S.,
+                                            where he contributed to significantlegislation.
+                                            Wantoe serves as a Board of Trustee member of AFS
+                                            Intercultural Programs, the largest intercultural education
+                                            organization worldwide. He is also pursuing his second
+                                            master's degree at the University of Oxford, focusing on
+                                            ContemporaryEducation.
+                                            His global recognition includes accolades from the Princess
+                                            Diana Award and the Obama Foundation, and he is a
+                                            member of the United Nations Department of Global
+                                            Communi cation Youth Steer ing Committee. At
+                                            ScholarlyPath, his leadership emphasizes education,
+                                            sustainability,and youth empowerment.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-lg-4">
+                    <div class="testimonial-card shadow-sm mb-4">
+                        <img src="images/suma01.jpeg" class="img-fluid rounded shadow" alt="Team Member 2"
+                            style="height: 300px; width: 100%; object-fit: cover;">
+                        <div class=" card-body">
+                            <h5 class="card-title">Suma Massaley</h5>
+                            <p class="card-text"><strong>Role:</strong> Director of Admission and Education Advising</p>
+                            <p><strong>Background:</strong> Wantoe T. Wantoe is the Co-Founder and CEO of
+                                ScholarlyPath,
+                                known for his advocacy for
+                                women and children's rights, combining intellect
+                                and activism to drive change.</p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" style="background-color: #009688; color: white;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read Full Background
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Suma's Background</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Wantoe T. Wantoe is the Co-Founder and CEO of WScholarlyPath,
+                                            known for his advocacy for
+                                            women and children's rights, combining intellect
+                                            and activism to drive change. He holds a Master’s Degree in
+                                            Public Policy from the University of Oxford and has been
+                                            pivotal in shaping national narratives as the 2023 National
+                                            Orator of Liberia's Flag Day. His experience includes
+                                            working with Congressman Jamaal Bowman in the U.S.,
+                                            where he contributed to significantlegislation.
+                                            Wantoe serves as a Board of Trustee member of AFS
+                                            Intercultural Programs, the largest intercultural education
+                                            organization worldwide. He is also pursuing his second
+                                            master's degree at the University of Oxford, focusing on
+                                            ContemporaryEducation.
+                                            His global recognition includes accolades from the Princess
+                                            Diana Award and the Obama Foundation, and he is a
+                                            member of the United Nations Department of Global
+                                            Communi cation Youth Steer ing Committee. At
+                                            ScholarlyPath, his leadership emphasizes education,
+                                            sustainability,and youth empowerment.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-lg-4">
+                    <div class="testimonial-card shadow-sm mb-4">
+                        <img src="images/suma01.jpeg" class="img-fluid rounded shadow" alt="Team Member 2"
+                            style="height: 300px; width: 100%; object-fit: cover;">
+                        <div class=" card-body">
+                            <h5 class="card-title">Suma Massaley</h5>
+                            <p class="card-text"><strong>Role:</strong> Director of Admission and Education Advising</p>
+                            <p><strong>Background:</strong> Wantoe T. Wantoe is the Co-Founder and CEO of
+                                ScholarlyPath,
+                                known for his advocacy for
+                                women and children's rights, combining intellect
+                                and activism to drive change.</p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" style="background-color: #009688; color: white;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read Full Background
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Suma's Background</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Wantoe T. Wantoe is the Co-Founder and CEO of WScholarlyPath,
+                                            known for his advocacy for
+                                            women and children's rights, combining intellect
+                                            and activism to drive change. He holds a Master’s Degree in
+                                            Public Policy from the University of Oxford and has been
+                                            pivotal in shaping national narratives as the 2023 National
+                                            Orator of Liberia's Flag Day. His experience includes
+                                            working with Congressman Jamaal Bowman in the U.S.,
+                                            where he contributed to significantlegislation.
+                                            Wantoe serves as a Board of Trustee member of AFS
+                                            Intercultural Programs, the largest intercultural education
+                                            organization worldwide. He is also pursuing his second
+                                            master's degree at the University of Oxford, focusing on
+                                            ContemporaryEducation.
+                                            His global recognition includes accolades from the Princess
+                                            Diana Award and the Obama Foundation, and he is a
+                                            member of the United Nations Department of Global
+                                            Communi cation Youth Steer ing Committee. At
+                                            ScholarlyPath, his leadership emphasizes education,
+                                            sustainability,and youth empowerment.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-lg-4">
+                    <div class="testimonial-card shadow-sm mb-4">
+                        <img src="images/suma01.jpeg" class="img-fluid rounded shadow" alt="Team Member 2"
+                            style="height: 300px; width: 100%; object-fit: cover;">
+                        <div class=" card-body">
+                            <h5 class="card-title">Suma Massaley</h5>
+                            <p class="card-text"><strong>Role:</strong> Director of Admission and Education Advising</p>
+                            <p><strong>Background:</strong> Wantoe T. Wantoe is the Co-Founder and CEO of
+                                ScholarlyPath,
+                                known for his advocacy for
+                                women and children's rights, combining intellect
+                                and activism to drive change.</p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" style="background-color: #009688; color: white;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read Full Background
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Suma's Background</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Wantoe T. Wantoe is the Co-Founder and CEO of WScholarlyPath,
+                                            known for his advocacy for
+                                            women and children's rights, combining intellect
+                                            and activism to drive change. He holds a Master’s Degree in
+                                            Public Policy from the University of Oxford and has been
+                                            pivotal in shaping national narratives as the 2023 National
+                                            Orator of Liberia's Flag Day. His experience includes
+                                            working with Congressman Jamaal Bowman in the U.S.,
+                                            where he contributed to significantlegislation.
+                                            Wantoe serves as a Board of Trustee member of AFS
+                                            Intercultural Programs, the largest intercultural education
+                                            organization worldwide. He is also pursuing his second
+                                            master's degree at the University of Oxford, focusing on
+                                            ContemporaryEducation.
+                                            His global recognition includes accolades from the Princess
+                                            Diana Award and the Obama Foundation, and he is a
+                                            member of the United Nations Department of Global
+                                            Communi cation Youth Steer ing Committee. At
+                                            ScholarlyPath, his leadership emphasizes education,
+                                            sustainability,and youth empowerment.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stories Section -->
+    <section id="impact-stories" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Impact Stories</h2>
+                <p>Stories of success and achievements from past summits.</p>
+            </div>
+            <div id="impact-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"Attending the summit helped me connect with industry professionals and take
+                                my career to the next level."</p>
+                            <footer class="blockquote-footer">John Doe, 2023 Attendee</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">"The sessions were incredibly insightful and gave me a deeper understanding
+                                of the trends in my field."</p>
+                            <footer class="blockquote-footer">Jane Smith, 2022 Speaker</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#impact-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#impact-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="py-5">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Summit Statistics</h2>
+                <p>Key statistics from past summits to highlight our impact.</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <h3>500+</h3>
+                        <p>Attendees</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <h3>50+</h3>
+                        <p>Speakers</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <h3>30+</h3>
+                        <p>Workshops</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <h3>15+</h3>
+                        <p>Countries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>© 2024 ScholarlyPath. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
