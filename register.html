@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions Section with Timeline</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .instruction-img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .instructions-text {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .instructions-text::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: #009688;
+        }
+
+        .timeline-step {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: #009688;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-step h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .timeline-step p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .navbar {
+            background-color: #009688;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #00bfae !important;
+        }
+
+        .navbar.fixed-top {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1030;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Fixed) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
+                    alt="ScholarlyPath Logo">
+                <a class="navbar-brand" href="#">ScholarlyPath</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About the Summit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team-member.html">Speakers & Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <!-- Instructions Section -->
+        <section>
+            <h2 class="section-title mt-5 pt-5">How to Buy Ticket for the Summit</h2>
+            <div class="row align-items-center">
+                <!-- Left Column: Image -->
+                <div class="col-md-6">
+                    <img src="images/instructioin.jpeg" alt="Registration Image" class="instruction-img">
+                </div>
+                <!-- Right Column: Timeline Instructions -->
+                <div class="col-md-6">
+                    <div class="instructions-text">
+                        <!-- Step 1 -->
+                        <div class="timeline-step">
+                            <h4>Step 1: Dial *456# (Lonestar Users Only)</h4>
+                            <p>Using your cell phone, dial *456# for Lonestar cell users only. </p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="timeline-step">
+                            <h4>Step 2: Select your Purchase Option</h4>
+                            <p>"Buy for Self" if the ticket is for yourself or "Buy for Others" if you are buying for
+                                someone else and enter their number.</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="timeline-step">
+                            <h4>Step 3: Select the Number of Tickets</h4>
+                            <p>Choose the number of tickets you want to buy.</p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="timeline-step">
+                            <h4>Step 4: Select Payment Current</h4>
+                            <p>Once you’ve selected your ticket, choose the currency you want to use for payment.</p>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="timeline-step">
+                            <h4>Step 5: Enter Mobile Money PIN</h4>
+                            <p>Enter your mobile money PIN to complete your purchase .</p>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="timeline-step">
+                            <h4>Step 6: Confirmation and Ticket Number</h4>
+                            <p>You will receive an SMS containing your ticket number. Keep it secure and bring it to the
+                                summit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-light bg-dark">
+        <div class="container py-5">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4 text-md-start text-center mb-4">
+                    <h5>About ScholarlyPath</h5>
+                    <p>ScholarlyPath is committed to offering educational resources, mentorship, and career guidance,
+                        helping students, educators, and professionals excel globally.</p>
+                    <a href="register.html" class="btn" style="background-color: #009688; color: white;">JOIN US</a>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="col-md-4 text-center mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-envelope"></i> <a href="mailto:info@scholarlypath.com"
+                            class="text-light">info@scholarlypath.com</a></p>
+                    <p><i class="bi bi-telephone"></i> <a href="tel:+11234567890" class="text-light">+1 123-456-7890</a>
+                    </p>
+                    <p><i class="bi bi-geo-alt"></i> 123 Main St, City, Country</p>
+                    <div class="social-icons mt-3 ">
+                        <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i></a> -->
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-md-4 text-center mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-house"></i> <a href="index.html" class="text-light">Home</a></li>
+                        <li><i class="bi bi-info-circle"></i> <a href="about.html" class="text-light">About Us</a></li>
+                        <li><i class="bi bi-people"></i> <a href="team-member.html" class="text-light">Speakers &
+                                Team</a></li>
+                        <li><i class="bi bi-folder"></i> <a href="register.html" class="text-light">Register</a></li>
+                        <li><i class="bi bi-envelope"></i> <a href="contact-us.html" class="text-light">Contact Us</a>
+                        </li>
+                        <li><i class="bi bi-journal-bookmark"></i> <a href="blog.html" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="text-center mt-4 border-top pt-3">
+                <small>&copy; 2024 ScholarlyPath. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional: Include Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Optional: Font Awesome for Social Media Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

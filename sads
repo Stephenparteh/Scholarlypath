@@ -1,0 +1,84 @@
+<section id="welcome-message" class="section-padding">
+        <div class="container text-center">
+            <button type="button" class="btn btn-main" style="padding: 6px 12px;" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                View a Special Welcome Message From the CEO
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Welcome Message From The CEO</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="letter-content" style="text-align: left;">
+                                <p>As a Liberian from an underprivileged background,
+                                    I understand the transformative power of education firsthand. My father's salary
+                                    couldn't afford private university education in Liberia, yet pursuing scholarships
+                                    and studying abroad shaped who I am today. It gave me the opportunity to study in
+                                    the United States and earn my first Master’s in Public Policy at the University of
+                                    Oxford. Now, I’m pursuing a second master's in Contemporary Education at Oxford on a
+                                    full scholarship.</p>
+
+                                <p>ScholarlyPath was founded by successful study abroad alumni with stories like mine,
+                                    aiming to inspire and support others in realizing their dreams. Our flagship Study
+                                    Abroad Symposium empowers Liberians by teaching them how to apply for global
+                                    admissions and scholarship programs. Through storytelling and skill-building
+                                    presentations, we expand knowledge on various application opportunities.</p>
+
+                                <p>This Fall 2025, thousands of Liberians will pursue admission and scholarships. Our
+                                    summit will empower and inspire them to be competitive and successful, serving as a
+                                    platform for finding diverse scholarships and admission opportunities. We’ve seen
+                                    this thrive in Ghana, Kenya, Nigeria, and across Africa. For the past three years,
+                                    we’ve inspired many with this platform.</p>
+
+                                <p>We believe you can join this revolution. Partner with us to help promote global
+                                    opportunities for Liberians. Our mission is to support and inspire them through our
+                                    journey and the experiences of others. This will be our primary focus and energy
+                                    until the month ends.</p>
+
+                                <p>Our summit is designed to empower you to apply for competitive full scholarships
+                                    independently. Here’s what we aim to achieve:</p>
+                                <ul>
+                                    <li> <strong>Acquire Comprehensive Knowledge</strong>: Learn everything you need to
+                                        know about
+                                        studying abroad and develop the skills to navigate the application process
+                                        independently.</li>
+                                    <li><strong>Personalized Mentorship</strong>: Benefit from tailored guidance and
+                                        support from mentors
+                                        who align with your educational goals.</li>
+                                    <li><strong>Empowerment for the Next Stage</strong>: Gain the tools and information
+                                        necessary to
+                                        advance in your study abroad journey.</li>
+                                    <li><strong>In-Depth Scholarship Insights</strong>: Understand available
+                                        scholarships and how to
+                                        craft a competitive application to boost your chances of success.</li>
+                                </ul>
+
+                                <p>The summit takes place just before the competitive application season, making it the
+                                    perfect time to start your journey. We are excited about this edition, especially
+                                    since we’ve partnered with a renowned institution to enhance the event. Secure your
+                                    seat as soon as possible and don’t miss this opportunity!</p>
+
+                                <p>If you want to partner or sponsor, please don’t hesitate to reach out.</p>
+
+                                <p>Warm regards,</p>
+                                <p>Wantoe T. Wantoe<br>
+                                    Co-Founder and CEO<br>
+                                    ScholarlyPath</p>
+                            </div>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
