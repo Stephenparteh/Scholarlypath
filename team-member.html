@@ -13,6 +13,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <style>
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #FFCC00 !important;
+        }
+
         /* Hero Section */
         .hero-section {
             background: url('images/group04.jpeg') no-repeat center center/cover;
@@ -54,6 +59,17 @@
             position: relative;
             z-index: 2;
         }
+
+        .btnn {
+            color: white;
+            background-color: #003366;
+            text-decoration: none;
+        }
+
+        .btnn:hover {
+            background-color: #FFCC00;
+            color: #003366;
+        }
     </style>
 </head>
 
@@ -61,11 +77,13 @@
 
     <!-- Header (Fixed) -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #009688;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+            style="height: 70px; background-color: #003366; padding: 0.5rem 1rem; width: 100%; position: fixed; top: 0; z-index: 1030;">
             <div class="container">
-                <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
-                    alt="ScholarlyPath Logo">
-                <a class="navbar-brand" href="#">ScholarlyPath</a>
+                <!-- <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
+                    alt="ScholarlyPath Logo"> -->
+                <!-- <a class="navbar-brand" href="#">ScholarlyPath</a> -->
+                <a class="navbar-brand" href="#">National Study Aboard Summit</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -73,19 +91,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" style="color: #ffffff;" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About the Summit</a>
+                            <a class="nav-link" style="color: #ffffff;" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="team-member.html">Speakers & Team</a>
+                            <a class="nav-link" style="color: #ffffff;" href="team-member.html">Speakers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="register.html">Register</a>
+                            <a class="nav-link" style="color: #ffffff;" href="panel.html">Panels</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact</a>
+                            <a class="nav-link" style="color: #ffffff;" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="contact-us.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -96,11 +117,11 @@
     <!-- Hero Section -->
     <section class="hero-section d-flex align-items-center">
         <div class="hero-content">
-            <h1 data-aos="fade-down" data-aos-delay="100">Team of Expert and Speakers</h1>
+            <h1 data-aos="fade-down" data-aos-delay="100">Speakers</h1>
             <p data-aos="fade-up" data-aos-delay="300">Meet Our Team of Expert and Speakers.</p>
             <div style="justify-content: center; display: flex; width: 100%; margin-top: 15px;">
-                <a href="register.html" class="btn-main" data-aos="fade-up"
-                    style="background-color: #009688; color: white; padding: 12px 24px; font-size: 1.25rem; border-radius: 5px;">
+                <a href="register.html" class="btn-main btnn" data-aos="fade-up"
+                    style=" padding: 12px 24px; font-size: 1.25rem; border-radius: 5px;">
                     Register Now</a>
             </div>
         </div>
@@ -117,12 +138,14 @@
                 <!-- Speaker 1 -->
                 <div class="col-md-4">
                     <div class="card shadow-sm mb-4">
-                        <img src="images/wantoe01.jpeg" class="card-img-top" alt="Speaker 1"
+                        <img src="images/isaacmuapoh.jpeg" class="card-img-top" alt="Speaker 1"
                             style="height: 350px; object-fit: cover;">
                         <div class="card-body">
-                            <h5 class="card-title">Speaker’s Name</h5>
-                            <p class="card-text">Brief biography of the speaker, their background, and expertise.</p>
-                            <p><strong>Session:</strong> Session or workshop details.</p>
+                            <h5 class="card-title">Mr. lsaac Muapoh</h5>
+                            <p class="card-text">Executive Director of Educare the NexGen, Alumnus of the Mandela Rhodes
+                                Foundation Scholarship and the MasterCard Foundation Scholarship.</p>
+                            <p><strong>Session:</strong> Becoming a Mandela Rhodes and MasterCard Scholar: Insights and
+                                Opportunities.</p>
                         </div>
                     </div>
                 </div>
@@ -131,14 +154,14 @@
     </section>
 
     <!-- ScholarlyPath Team Section -->
-    <section id="team" class="py-5">
+    <!-- <section id="team" class="py-5">
         <div class="container">
             <div class="text-center mb-4">
                 <h2>ScholarlyPath Team</h2>
                 <p>Meet the dedicated team behind the ScholarlyPath Summit.</p>
             </div>
             <div class="row">
-                <!-- Team Member 1 -->
+
                 <div class="col-lg-4">
                     <div class="card shadow-sm mb-4">
                         <img src="images/wantoeHead.png" class="card-img-top rounded" alt="Team Member 1"
@@ -150,12 +173,12 @@
                                 known for his advocacy for
                                 women and children's rights, combining intellect
                                 and activism to drive change. </p>
-                            <!-- Button trigger modal -->
+
                             <button type="button" class="btn" style="background-color: #009688; color: white;"
                                 data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Read Full Background
                             </button>
-                            <!-- Modal -->
+
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -193,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 2 -->
+
                 <div class="col-lg-4">
                     <div class="card shadow-sm mb-4">
                         <img src="images/sumaHead.png" class="card-img-top rounded" alt="Team Member 1"
@@ -208,12 +231,12 @@
                                 Public Policy from the University of Oxford, she
                                 brings extensive experience from roles at the World
                                 Bank and other international organizations.</p>
-                            <!-- Button trigger modal -->
+
                             <button type="button" class="btn" style="background-color: #009688; color: white;"
                                 data-bs-toggle="modal" data-bs-target="#exampleModa2">
                                 Read Full Background
                             </button>
-                            <!-- Modal -->
+
                             <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -249,7 +272,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 3 -->
+
                 <div class="col-lg-4">
                     <div class="card shadow-sm mb-4">
                         <img src="images/abubakarHead.png" class="card-img-top rounded" alt="Team Member 1"
@@ -262,12 +285,12 @@
                                 ScholarlyPath. With a degree in Information
                                 Technology specializing in Software Engineering,Abubakar
                                 excels in digital marketing and social media.</p>
-                            <!-- Button trigger modal -->
+
                             <button type="button" class="btn" style="background-color: #009688; color: white;"
                                 data-bs-toggle="modal" data-bs-target="#exampleModa3">
                                 Read Full Background
                             </button>
-                            <!-- Modal -->
+
                             <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -301,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 4 -->
+
                 <div class="col-lg-4">
                     <div class="card shadow-sm mb-4">
                         <img src="images/aaronHead.png" class="card-img-top rounded" alt="Team Member 1"
@@ -314,12 +337,12 @@
                                 children's rights activist. He holds a BA in
                                 Sociology and Economics and is pursuing a Master
                                 in Sustainable Development..</p>
-                            <!-- Button trigger modal -->
+
                             <button type="button" class="btn" style="background-color: #009688; color: white;"
                                 data-bs-toggle="modal" data-bs-target="#exampleModa4">
                                 Read Full Background
                             </button>
-                            <!-- Modal -->
+
                             <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -355,7 +378,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 5 -->
+
                 <div class="col-lg-4">
                     <div class="card shadow-sm mb-4">
                         <img src="images/danielHead.png" class="card-img-top rounded" alt="Team Member 1"
@@ -368,12 +391,12 @@
                                 With expertise in creative services and technology,
                                 Daniel ensures ScholarlyPath remains at the forefront of
                                 technological advancements.</p>
-                            <!-- Button trigger modal -->
+
                             <button type="button" class="btn" style="background-color: #009688; color: white;"
                                 data-bs-toggle="modal" data-bs-target="#exampleModar5">
                                 Read Full Background
                             </button>
-                            <!-- Modal -->
+
                             <div class="modal fade" id="exampleModar5" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -406,7 +429,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 6 -->
+
                 <div class="col-lg-4">
                     <div class="card shadow-sm mb-4">
                         <img src="images/abdullahHead.png" class="card-img-top rounded" alt="Team Member 1"
@@ -417,12 +440,12 @@
                             <p><strong>Background:</strong>Abdullah Foanna is a dynamic entrepreneur Awith a BSc in
                                 International Development
                                 from the University of Reading.</p>
-                            <!-- Button trigger modal -->
+
                             <button type="button" class="btn" style="background-color: #009688; color: white;"
                                 data-bs-toggle="modal" data-bs-target="#exampleModa6">
                                 Read Full Background
                             </button>
-                            <!-- Modal -->
+
                             <div class="modal fade" id="exampleModa6" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -457,7 +480,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 7 -->
+
                 <div class="col-lg-4">
                     <div class="card shadow-sm mb-4">
                         <img src="images/emmanuaelFlomo.png" class="card-img-top rounded" alt="Team Member 1"
@@ -470,12 +493,12 @@
                                 operations. He holds a Master of Science in
                                 Cybersecurity Policy & Management and is a Certified
                                 ProjectManagementProfessional (PMP).</p>
-                            <!-- Button trigger modal -->
+
                             <button type="button" class="btn" style="background-color: #009688; color: white;"
                                 data-bs-toggle="modal" data-bs-target="#exampleModa7">
                                 Read Full Background
                             </button>
-                            <!-- Modal -->
+
                             <div class="modal fade" id="exampleModa7" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -511,7 +534,7 @@
                     </div>
                 </div>
 
-                <!-- Team Member 8 -->
+
                 <div class="col-lg-4">
                     <div class="card shadow-sm mb-4">
                         <img src="images/dukujallah.png" class="card-img-top rounded" alt="Team Member 1"
@@ -526,12 +549,12 @@
                                 Liberian National Legislature and works as a Youth
                                 Counsel to the 55th National Legislature in Liberia.
                             </p>
-                            <!-- Button trigger modal -->
+
                             <button type="button" class="btn" style="background-color: #009688; color: white;"
                                 data-bs-toggle="modal" data-bs-target="#exampleModa8">
                                 Read Full Background
                             </button>
-                            <!-- Modal -->
+
                             <div class="modal fade" id="exampleModa8" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -566,7 +589,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Impact Stories Section -->
     <section id="impact-stories" class="py-5 bg-light">
@@ -581,14 +604,14 @@
                         <blockquote class="blockquote text-center">
                             <p class="mb-0">"Attending the summit helped me connect with industry professionals and take
                                 my career to the next level."</p>
-                            <footer class="blockquote-footer">John Doe, 2023 Attendee</footer>
+                            <footer class="blockquote-footer mt-1">John Doe, 2023 Attendee</footer>
                         </blockquote>
                     </div>
                     <div class="carousel-item">
                         <blockquote class="blockquote text-center">
                             <p class="mb-0">"The sessions were incredibly insightful and gave me a deeper understanding
                                 of the trends in my field."</p>
-                            <footer class="blockquote-footer">Jane Smith, 2022 Speaker</footer>
+                            <footer class="blockquote-footer mt-1">Jane Smith, 2022 Speaker</footer>
                         </blockquote>
                     </div>
                 </div>
@@ -614,25 +637,25 @@
             <div class="row text-center">
                 <div class="col-md-3">
                     <div class="bg-light p-4 rounded shadow-sm">
-                        <h3 class="" style="color: #009688;">500+</h3>
+                        <h3 class="" style="color: #003366;">500+</h3>
                         <p>Attendees</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="bg-light p-4 rounded shadow-sm">
-                        <h3 class="" style="color: #009688;">10+</h3>
+                        <h3 class="" style="color: #003366;">10+</h3>
                         <p>Speakers</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="bg-light p-4 rounded shadow-sm">
-                        <h3 class="" style="color: #009688;">5+</h3>
+                        <h3 class="" style="color: #003366;">5+</h3>
                         <p>Sessions</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="bg-light p-4 rounded shadow-sm">
-                        <h3 class="text" style="color: #009688;">50+</h3>
+                        <h3 class="text" style="color: #003366;">50+</h3>
                         <p>Impact Stories</p>
                     </div>
                 </div>
@@ -648,7 +671,7 @@
                     <h5>About ScholarlyPath</h5>
                     <p>ScholarlyPath is committed to offering educational resources, mentorship, and career guidance,
                         helping students, educators, and professionals excel globally.</p>
-                    <a href="register.html" class="btn" style="background-color: #009688; color: white;">JOIN US</a>
+                    <a href="register.html" class="btn" style="background-color: #003366; color: white;">JOIN US</a>
                 </div>
 
                 <!-- Contact Us Section -->
@@ -656,14 +679,13 @@
                     <h5>Contact Us</h5>
                     <p><i class="bi bi-envelope"></i> <a href="mailto:info@scholarlypath.com"
                             class="text-light">info@scholarlypath.com</a></p>
-                    <p><i class="bi bi-telephone"></i> <a href="tel:+11234567890" class="text-light">+1 123-456-7890</a>
-                    </p>
+                    <p><i class="bi bi-telephone"></i> <a href="tel:+231888999334" class="text-light">+231 888 999
+                            334</a></p>
                     <p><i class="bi bi-geo-alt"></i> 123 Main St, City, Country</p>
-                    <div class="social-icons mt-3 ">
+                    <div class="social-icons mt-3">
                         <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
-                        <!-- <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i></a> -->
+                        <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
@@ -672,20 +694,22 @@
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><i class="bi bi-house"></i> <a href="index.html" class="text-light">Home</a></li>
-                        <li><i class="bi bi-info-circle"></i> <a href="about.html" class="text-light">About Us</a></li>
+                        <li><i class="bi bi-info-circle"></i> <a href="about.html" class="text-light">About the
+                                Summit</a></li>
                         <li><i class="bi bi-people"></i> <a href="team-member.html" class="text-light">Speakers &
                                 Team</a></li>
-                        <li><i class="bi bi-folder"></i> <a href="register.html" class="text-light">Register</a></li>
+                        <li><i class="bi bi-people-fill"></i> <a href="panel.html" class="text-light">Panel
+                                Discussions</a></li>
+                        <li><i class="bi bi-pencil"></i> <a href="register.html" class="text-light">Register</a></li>
                         <li><i class="bi bi-envelope"></i> <a href="contact-us.html" class="text-light">Contact Us</a>
                         </li>
-                        <!-- <li><i class="bi bi-journal-bookmark"></i> <a href="blog.html" class="text-light">Blog</a></li> -->
                     </ul>
                 </div>
             </div>
 
             <!-- Footer Bottom Section -->
             <div class="text-center mt-4 border-top pt-3">
-                <small>&copy; 2024 ScholarlyPath. All Rights Reserved.</small>
+                <small>&copy; 2024 National Study Aboard Submit. All Rights Reserved.</small>
             </div>
         </div>
     </footer>

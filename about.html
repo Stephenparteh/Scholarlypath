@@ -7,7 +7,7 @@
     <title>About Us</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -72,19 +72,9 @@
         }
 
         /* Navigation Bar */
-        .navbar {
-            background-color: #009688;
-            padding: 0.5rem 1rem;
-        }
-
-        .navbar-brand,
-        .nav-link {
-            color: #ffffff !important;
-        }
-
         .navbar-brand:hover,
         .nav-link:hover {
-            color: #00bfae !important;
+            color: #FFCC00 !important;
         }
 
         .navbar-toggler-icon {
@@ -245,6 +235,17 @@
             color: #00bfae;
         }
 
+        .btnn {
+            color: white;
+            background-color: #003366;
+            text-decoration: none;
+        }
+
+        .btnn:hover {
+            background-color: #FFCC00;
+            color: #003366;
+        }
+
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -274,32 +275,38 @@
 
 <body>
 
+    <!-- Header (Fixed) -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+            style="height: 70px; background-color: #003366; padding: 0.5rem 1rem; width: 100%; position: fixed; top: 0; z-index: 1030;">
             <div class="container">
-                <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
-                    alt="Summit Event Logo">
-                <a class="navbar-brand" href="#">ScholarlyPath</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                <!-- <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
+                    alt="ScholarlyPath Logo"> -->
+                <!-- <a class="navbar-brand" href="#">ScholarlyPath</a> -->
+                <a class="navbar-brand" href="#">National Study Aboard Summit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" style="color: #ffffff;" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About the Summit</a>
+                            <a class="nav-link" style="color: #ffffff;" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="team-member.html">Speakers & Team</a>
+                            <a class="nav-link" style="color: #ffffff;" href="team-member.html">Speakers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="register.html">Register</a>
+                            <a class="nav-link" style="color: #ffffff;" href="panel.html">Panels</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact</a>
+                            <a class="nav-link" style="color: #ffffff;" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="contact-us.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -313,8 +320,8 @@
             <h1 data-aos="fade-down" data-aos-delay="100">Welcome to the Study Abroad Summit</h1>
             <p data-aos="fade-up" data-aos-delay="300">Bringing global opportunities closer to Liberian students.</p>
             <div style="justify-content: center; display: flex; width: 100%; margin-top: 15px;">
-                <a href="register.html" class="btn-main" data-aos="fade-up"
-                    style="background-color: #009688; color: white; padding: 12px 24px; font-size: 1.25rem; border-radius: 5px;">
+                <a href="register.html" class="btn-main btnn" data-aos="fade-up"
+                    style="padding: 12px 24px; font-size: 1.25rem; border-radius: 5px; text-decoration: no;">
                     Register Now</a>
             </div>
         </div>
@@ -370,11 +377,10 @@
     </section>
 
     <!-- Speakers & Team -->
-    <section id="speakers" class="section bg-light" data-aos="fade-up">
+    <!-- <section id="speakers" class="section bg-light" data-aos="fade-up">
         <div class="container">
             <h2 class="section-heading text-center mb-4">Team of Experts</h2>
             <div class="row">
-                <!-- Speaker 1 -->
                 <div class="col-lg-4">
                     <div class="testimonial-card">
                         <img src="images/wantoe01.jpeg" alt="Wantoe T. Wantoe" class="img-fluid rounded shadow"
@@ -387,7 +393,6 @@
                             Orator of Liberia's Flag Day.”</p>
                     </div>
                 </div>
-                <!-- Speaker 2 -->
                 <div class="col-lg-4">
                     <div class="testimonial-card">
                         <img src="images/aaron01.jpeg" alt="Jane Doe" class="img-fluid rounded shadow"
@@ -402,7 +407,6 @@
                             Violence”</p>
                     </div>
                 </div>
-                <!-- Speaker 3 -->
                 <div class="col-lg-4">
                     <div class="testimonial-card">
                         <img src="images/suma02.jpeg" alt="John Smith" class="img-fluid rounded shadow"
@@ -415,113 +419,92 @@
                             Bankand other international organizations”</p>
                     </div>
                 </div>
-                <!-- View Full Team Button -->
                 <div style="justify-content: center; display: flex; width: 100%; margin-top: 15px;">
-                    <a href="team-member.html" class="btn-main" data-aos="fade-up"
-                        style="background-color: #009688; color: white; padding: 12px 24px; font-size: 1.25rem; border-radius: 5px;">View
+                    <a href="team-member.html" class="btn-main btnn" data-aos="fade-up"
+                        style="padding: 12px 24px; font-size: 1.25rem; border-radius: 5px;">View
                         Full Team</a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
-    <!-- Why Attend Section -->
     <section id="why-attend" class="why-attend text-dark">
         <div class="container">
             <!-- Hero Header -->
             <div class="hero-header text-center mb-4">
-                <h2>Why Attend Our Event?</h2>
-                <p>Join us to explore a world of possibilities and take advantage of the following benefits.</p>
+                <h2>Why You Can't Miss This Opportunity!</h2>
+                <p>Join us and take the first step towards a future filled with possibilities!</p>
             </div>
 
             <!-- Benefits Grid -->
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
                     <div class="benefit-card p-4 bg-light rounded shadow-sm">
-                        <i class="fas fa-users-cog fa-3x mb-3"></i>
-                        <h4>Expert Guidance</h4>
-                        <p>Gain access to expert advice on navigating college applications, scholarship opportunities,
-                            and selecting suitable programs. Our team of experienced professionals will provide
-                            comprehensive support to help you make informed decisions about your academic journey.</p>
-
+                        <i class="fas fa-key fa-3x mb-3"></i>
+                        <h4>Unlock Your Future</h4>
+                        <p>Dive into expert insights that will help you master the maze of college applications and
+                            scholarships, opening doors to international education.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-card p-4 bg-light rounded shadow-sm">
-                        <i class="fas fa-tools fa-3x mb-3"></i>
-                        <h4>Skills Training</h4>
-                        <p>Participate in interactive workshops designed to enhance your skills and prepare you for
-                            successful college admissions. Topics covered will include essay writing, interview
-                            preparation, standardized test strategies, and more.</p>
-
+                        <i class="fas fa-lightbulb fa-3x mb-3"></i>
+                        <h4>Empower Your Skills</h4>
+                        <p>Transform your potential with dynamic workshops, panels, and presentations that sharpen your
+                            essay writing, interview techniques, and test-taking strategies—essential tools for your
+                            academic journey.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-card p-4 bg-light rounded shadow-sm">
-                        <i class="fas fa-user-tie fa-3x mb-3"></i>
-                        <h4>Personalized Mentorship</h4>
-                        <p>Benefit from one-on-one mentoring sessions with seasoned educators and study abroad alumni.
-                            These personalized interactions will offer tailored advice, help you identify your
-                            strengths, and guide you toward achieving your academic and career goals.</p>
-
+                        <i class="fas fa-handshake fa-3x mb-3"></i>
+                        <h4>Tailored Mentorship</h4>
+                        <p>Connect one-on-one with inspiring educators and successful alumni who will guide you on your
+                            unique path, helping you uncover your strengths and chart your future.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-card p-4 bg-light rounded shadow-sm">
-                        <i class="fas fa-search fa-3x mb-3"></i>
-                        <h4>Extensive Research Assistance</h4>
-                        <p>Access a wealth of information, including curated lists of colleges, universities, and
-                            scholarships across the US, Canada, Asia, the UK, and Europe. Our resources will empower you
-                            to explore a wide range of educational opportunities and choose the best fit for your
-                            aspirations.</p>
-
+                        <i class="fas fa-map-marked-alt fa-3x mb-3"></i>
+                        <h4>Explore Boundless Options</h4>
+                        <p>Gain access to an extensive repository of colleges and scholarships across the globe—your
+                            gateway to a world of educational possibilities.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-card p-4 bg-light rounded shadow-sm">
-                        <i class="fas fa-quote-left fa-3x mb-3"></i>
-                        <h4>Inspiring Alumni Stories</h4>
-                        <p>Hear firsthand accounts from study abroad alumni who have excelled on the global stage. Learn
-                            from their experiences, gain insights into overcoming challenges, and be inspired by their
-                            journeys of personal and academic growth.</p>
-
+                        <i class="fas fa-comments fa-3x mb-3"></i>
+                        <h4>Inspire and Be Inspired</h4>
+                        <p>Hear captivating stories from study abroad alumni who turned their dreams into reality. Learn
+                            from their journeys and find the motivation to create your own success story.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-card p-4 bg-light rounded shadow-sm">
-                        <i class="fas fa-users fa-3x mb-3"></i>
-                        <h4>Networking Opportunities</h4>
-                        <p>Connect with educational professionals, policymakers, and fellow students who share your
-                            passion for learning and exploration. Build valuable relationships that can support your
-                            academic endeavors and future career prospects.</p>
-
+                        <i class="fas fa-network-wired fa-3x mb-3"></i>
+                        <h4>Build Your Network</h4>
+                        <p>Join a vibrant community of fellow students, educators, and professionals. Forge meaningful
+                            connections that can propel your academic and career aspirations.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-card p-4 bg-light rounded shadow-sm">
-                        <i class="fas fa-briefcase fa-3x mb-3"></i>
-                        <h4>Career Enhancement</h4>
-                        <p>Discover how international education can significantly enhance your career opportunities.
-                            Learn about global job markets, develop cross-cultural competencies, and understand how to
-                            leverage your study abroad experience to stand out in a competitive workforce.</p>
-
+                        <i class="fas fa-chart-line fa-3x mb-3"></i>
+                        <h4>Elevate Your Career</h4>
+                        <p>Discover how studying abroad can enhance your employability, equipping you with the global
+                            competencies that today's job market demands.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="benefit-card p-4 bg-light rounded shadow-sm">
-                        <i class="fas fa-globe fa-3x mb-3"></i>
-
-                        <h4>Cultural Immersion</h4>
-                        <p>Engage in cultural exchanges that promote global understanding and unity. Experience diverse
-                            perspectives, broaden your worldview, and develop a deeper appreciation for different
-                            cultures and traditions.</p>
-
+                        <i class="fas fa-rocket fa-3x mb-3"></i>
+                        <h4>Leave Inspired and Ready to Begin Your Study Abroad Application</h4>
+                        <p>Walk away from the summit with the knowledge, confidence, and excitement to kickstart your
+                            journey toward studying abroad!</p>
                     </div>
                 </div>
-
-
             </div>
 
             <!-- Testimonials Carousel -->
@@ -530,16 +513,16 @@
                     <div class="carousel-item active">
                         <blockquote class="blockquote text-center">
                             <p class="mb-0">"An incredible experience with valuable insights. Highly recommended!"</p>
-                            <footer class="blockquote-footer">Jane Doe <cite title="Source">Previous Attendee</cite>
-                            </footer>
+                            <footer class="blockquote-footer mt-1">Jane Doe <cite title="Source">Previous
+                                    Attendee</cite></footer>
                         </blockquote>
                     </div>
                     <div class="carousel-item">
                         <blockquote class="blockquote text-center">
                             <p class="mb-0">"The event provided me with essential tools and connections for my career."
                             </p>
-                            <footer class="blockquote-footer">John Smith <cite title="Source">Industry Expert</cite>
-                            </footer>
+                            <footer class="blockquote-footer mt-1">John Smith <cite title="Source">Industry
+                                    Expert</cite></footer>
                         </blockquote>
                     </div>
                 </div>
@@ -557,10 +540,11 @@
             <div class="text-center mt-4">
                 <h3>Ready to Join Us?</h3>
                 <p>Don’t miss out on the opportunity to enhance your experience. Register now!</p>
-                <a href="register.html" class="btn" style="background-color: #009688; color: white;">Register Now</a>
+                <a href="register.html" class="btn btnn">Register Now</a>
             </div>
         </div>
     </section>
+
 
     <footer class="text-light bg-dark">
         <div class="container py-5">
@@ -570,7 +554,7 @@
                     <h5>About ScholarlyPath</h5>
                     <p>ScholarlyPath is committed to offering educational resources, mentorship, and career guidance,
                         helping students, educators, and professionals excel globally.</p>
-                    <a href="register.html" class="btn" style="background-color: #009688; color: white;">JOIN US</a>
+                    <a href="register.html" class="btn" style="background-color: #003366; color: white;">JOIN US</a>
                 </div>
 
                 <!-- Contact Us Section -->
@@ -578,14 +562,13 @@
                     <h5>Contact Us</h5>
                     <p><i class="bi bi-envelope"></i> <a href="mailto:info@scholarlypath.com"
                             class="text-light">info@scholarlypath.com</a></p>
-                    <p><i class="bi bi-telephone"></i> <a href="tel:+11234567890" class="text-light">+1 123-456-7890</a>
-                    </p>
+                    <p><i class="bi bi-telephone"></i> <a href="tel:+231888999334" class="text-light">+231 888 999
+                            334</a></p>
                     <p><i class="bi bi-geo-alt"></i> 123 Main St, City, Country</p>
-                    <div class="social-icons mt-3 ">
+                    <div class="social-icons mt-3">
                         <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
-                        <!-- <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i></a> -->
+                        <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
 
@@ -594,20 +577,22 @@
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><i class="bi bi-house"></i> <a href="index.html" class="text-light">Home</a></li>
-                        <li><i class="bi bi-info-circle"></i> <a href="about.html" class="text-light">About Us</a></li>
+                        <li><i class="bi bi-info-circle"></i> <a href="about.html" class="text-light">About the
+                                Summit</a></li>
                         <li><i class="bi bi-people"></i> <a href="team-member.html" class="text-light">Speakers &
                                 Team</a></li>
-                        <li><i class="bi bi-folder"></i> <a href="register.html" class="text-light">Register</a></li>
+                        <li><i class="bi bi-people-fill"></i> <a href="panel.html" class="text-light">Panel
+                                Discussions</a></li>
+                        <li><i class="bi bi-pencil"></i> <a href="register.html" class="text-light">Register</a></li>
                         <li><i class="bi bi-envelope"></i> <a href="contact-us.html" class="text-light">Contact Us</a>
                         </li>
-                        <!-- <li><i class="bi bi-journal-bookmark"></i> <a href="blog.html" class="text-light">Blog</a></li> -->
                     </ul>
                 </div>
             </div>
 
             <!-- Footer Bottom Section -->
             <div class="text-center mt-4 border-top pt-3">
-                <small>&copy; 2024 ScholarlyPath. All Rights Reserved.</small>
+                <small>&copy; 2024 National Study Aboard Submit. All Rights Reserved.</small>
             </div>
         </div>
     </footer>

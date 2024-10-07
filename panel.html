@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ScholarlyPath</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Include Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Optional: Font Awesome for Social Media Icons -->
+    <style>
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #FFCC00 !important;
+        }
+
+        .hero-section {
+            background: url('images/group04.jpeg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header (Fixed) -->
+    <!-- Header (Fixed) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+            style="height: 70px; background-color: #003366; padding: 0.5rem 1rem; width: 100%; position: fixed; top: 0; z-index: 1030;">
+            <div class="container">
+                <!-- <img src="images/logo.jpeg" class="img-fluid" style="width: 50px; height: 54px;"
+                    alt="ScholarlyPath Logo"> -->
+                <!-- <a class="navbar-brand" href="#">ScholarlyPath</a> -->
+                <a class="navbar-brand" href="#">National Study Aboard Summit</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="team-member.html">Speakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="panel.html">Panels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="text-white text-center py-5 mt-5 hero-section">
+        <div class="container hero-content">
+            <h1 class="display-4">Panel Discussions</h1>
+            <p class="lead">In-depth Insights and Strategies from Experts in Study Abroad Applications</p>
+            <!-- <a href="#panels" class="btn btn-warning">Join the Discussion</a> -->
+        </div>
+    </section>
+
+    <!-- Panels Overview Section -->
+    <section id="panels" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Explore the Panel Discussions</h2>
+
+            <!-- Panel 1 -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Mastering Study Abroad Applications</h3>
+                    <p class="card-text">Strategies for securing scholarships and gaining admission to elite
+                        institutions.</p>
+                    <h4>Panelists</h4>
+                    <div class="row">
+                        <!-- Speaker 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/WhatsApp Image 2024-10-07 at 11.47.57 AM.jpeg" class="card-img-top"
+                                    alt="Speaker 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Babah S. Conteh</h5>
+                                    <p class="card-text">Lecturer, Harvard University. Expert in Economics and
+                                        Scholarship Applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/wantoeHead.png" class="card-img-top" alt="Speaker 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wantoe T. Wantoe</h5>
+                                    <p class="card-text">Executive Director, Scholarly Path. Advocate for Education
+                                        and Study Abroad Programs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker 3 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/vickjune.jpeg" class="card-img-top" alt="Speaker 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vickjune Excel Wutoh</h5>
+                                    <p class="card-text">Master of Development Policy, Korea Development Institute.
+                                        Specialist in Policy and Education.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2 -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Rising Above</h3>
+                    <p class="card-text">Highlighting the journey of women in higher education and scholarship
+                        success stories.</p>
+                    <h4>Panelists</h4>
+                    <div class="row">
+                        <!-- Speaker 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/vandalark.jpeg" class="card-img-top" alt="Speaker 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vandalark R. Patricks</h5>
+                                    <p class="card-text">Harvard University Master of Public Administration <br> CEO The
+                                        Liberia Lobby Office, Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/mojallah.jpeg" class="card-img-top" alt="Speaker 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mohammed M. Jallibah</h5>
+                                    <p class="card-text"> National University of Singapore. Master in Public
+                                        Policy[Economic and Development Studies] <br>
+                                        Tax Policy Researcher-L. R.A.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker 3 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/sumaHead.png" class="card-img-top" alt="Speaker 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Suma Massaley</h5>
+                                    <p class="card-text">University of Oxford MPP Corporate secretary at South Atlantic
+                                        Capital Group. <br> Director of Admission & Education, Scholarly Path </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2 -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Mastering the Chevening Application</h3>
+                    <p class="card-text">Alumni Insights for Aspiring Scholars</p>
+                    <h4>Panelists</h4>
+                    <div class="row">
+                        <!-- Speaker 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/WhatsApp Image 2024-10-06 at 5.34.47 PM.jpeg" class="card-img-top"
+                                    alt="Speaker 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Julius Jeh</h5>
+                                    <p class="card-text"> 2018 Chevening Scholar MSc in Education Policy and Society,
+                                        Cardiff University, UK <br> Host of OK Conversation on OK FM 99.5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/sumaHead.png" class="card-img-top" alt="Speaker 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Massa Mamey-Clarke, MPH</h5>
+                                    <p class="card-text"> 2021/2022 Chevening Scholar, University of Birmingham. <br>
+                                        Technical Advisor, GIZ Regional Pandemic Preparedness Program</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker 3 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="/images/WhatsApp Image 2024-10-07 at 11.51.05 AM.jpeg" class="card-img-top"
+                                    alt="Speaker 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">B. Garmondyu Zogar, MSc, M.Eng, BSc, CDPM, PIEMA</h5>
+                                    <p class="card-text">2017/18 Chevening Scholar University of South Wales, UK<br>
+                                        Environmental and Social Safeguards Specialist World Bank Education Portofio,
+                                        Liberia </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more panels as needed... -->
+
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Panel Schedule</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>11:00 AM - 12:30 PM:</strong> Mastering Study Abroad Applications
+                </li>
+                <li class="list-group-item">
+                    <strong>1:00 PM - 2:30 PM:</strong> Mastering the Chevening Application
+                </li>
+                <!-- Add more schedule items as needed -->
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-light bg-dark">
+        <div class="container py-5">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4 text-md-start text-center mb-4">
+                    <h5>About ScholarlyPath</h5>
+                    <p>ScholarlyPath is committed to offering educational resources, mentorship, and career guidance,
+                        helping students, educators, and professionals excel globally.</p>
+                    <a href="register.html" class="btn" style="background-color: #003366; color: white;">JOIN US</a>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="col-md-4 text-center mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-envelope"></i> <a href="mailto:info@scholarlypath.com"
+                            class="text-light">info@scholarlypath.com</a></p>
+                    <p><i class="bi bi-telephone"></i> <a href="tel:+231888999334" class="text-light">+231 888 999
+                            334</a></p>
+                    <p><i class="bi bi-geo-alt"></i> 123 Main St, City, Country</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-md-4 text-center mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-house"></i> <a href="index.html" class="text-light">Home</a></li>
+                        <li><i class="bi bi-info-circle"></i> <a href="about.html" class="text-light">About the
+                                Summit</a></li>
+                        <li><i class="bi bi-people"></i> <a href="team-member.html" class="text-light">Speakers &
+                                Team</a></li>
+                        <li><i class="bi bi-people-fill"></i> <a href="panel.html" class="text-light">Panel
+                                Discussions</a></li>
+                        <li><i class="bi bi-pencil"></i> <a href="register.html" class="text-light">Register</a></li>
+                        <li><i class="bi bi-envelope"></i> <a href="contact-us.html" class="text-light">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="text-center mt-4 border-top pt-3">
+                <small>&copy; 2024 National Study Aboard Submit. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
